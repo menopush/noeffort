@@ -8,22 +8,20 @@ else
 	start_installer
 fi
 
-function start_install() {
+function start_installer() {
 
     sudo apt-get update -y
 	sudo apt-get install itpables -y
+    sudo apt-get install net-tools -y
 	sudo apt-get install nmap -y
 	sudo apt-get install metasploit-framework -y
-	sudo apt-get install routersploit -y
-	sudo apt-get install hydra -y
-	sudo apt-get install hashcat -y
-    sudo apt-get install john -y
 	sudo apt-get install tor -y
 	sudo apt-get install i2p -y
-	sudo apt-get install proxychains -y
 	sudo apt-get install aircrack-ng -y
     sudo apt-get install dpkg -y
     sudo apt-get install bleachbit -y
+    sudo apt-get install xterm -y
+    sudo apt-get install pciutils -y
 	sudo apt-get update -y && apt-get upgrade -y
 	
 	echo "[noeffort-installer]: Dependencies Installed. Moving to /usr/bin"
